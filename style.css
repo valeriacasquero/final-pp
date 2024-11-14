@@ -27,9 +27,20 @@ body {
 .banner {
     height: 405px;
     width: 100vw;
-    overflow: hidden;
+    overflow: auto;
     background-color: black;
     border-top: 3px solid var(--verde-claro);
+}
+
+.encabezado {
+    font-size: 100px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    pointer-events: none;
+    z-index: 2;
 }
 
 .imagen {
@@ -37,5 +48,11 @@ body {
     object-fit: cover;
     height: 405px;
     width: 1296px;
-    opacity: 0.8;
+    transition: ease-in-out 1s;
+    z-index: 1;
+}
+
+.imagen:hover {
+    opacity: 0.5;
+    transform: scale(2, 2);
 }
