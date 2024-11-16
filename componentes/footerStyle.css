@@ -1,0 +1,12 @@
+footer {
+    width: 100vw;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+img:hover {
+    opacity: 0.5;
+}
