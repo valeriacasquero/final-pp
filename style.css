@@ -1,6 +1,7 @@
 :root {
     --verde-claro: #6AB43E;
     --verde-oscuro: hsl(152, 87%, 17%);
+    --fondo-amarillo-claro: #faffbb;
 }
 @font-face {
     font-family: 'sail';
@@ -22,6 +23,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'sail';
+    background-color: var(--fondo-amarillo-claro);
 }
 
 .banner {
@@ -33,7 +35,7 @@ body {
 }
 
 .encabezado {
-    font-size: 100px;
+    font-size: 70px;
     color: white;
     position: absolute;
     top: 50%;
@@ -55,4 +57,40 @@ body {
 .imagen:hover {
     opacity: 0.5;
     transform: scale(2, 2);
+}
+
+.seccion {
+    color: var(--verde-oscuro);
+    width: 80%;
+    margin: 15px auto;
+    background-color: var(--verde-claro);
+    border: solid 3px var(--verde-oscuro);
+    border-radius: 15px;
+    cursor: default;
+}
+
+.titulo-seccion, .subtitulo-seccion, .parrafo-seccion, .mapa {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+.titulo-seccion {
+    text-decoration: underline var(--verde-oscuro);
+    font-size: 2.5rem;
+}
+
+.subtitulo-seccion {
+    margin: 0;
+    text-align: center;
+    font-size: large;
+}
+
+.parrafo-seccion, .lista-seccion {
+    font-size: 1.5rem;
+}
+
+.mapa{
+    width: 80%;
+    margin: 15px auto;
 }

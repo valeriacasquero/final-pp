@@ -1,12 +1,32 @@
 footer {
-    width: 100vw;
+    width: 98.5vw;
+    background-color: var(--fondo-amarillo-claro);
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
 }
 
-li {
+.grupo-iconos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.icono {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
+    cursor: pointer;
 }
 
-img:hover {
+footer img {
+    width: 48px;
+    height: 48px;
+    filter: drop-shadow(3px 3px 2px hsla(0, 0%, 0%, 0.5));
+}
+
+footer img:hover {
     opacity: 0.5;
 }
