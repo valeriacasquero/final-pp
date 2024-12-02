@@ -22,8 +22,8 @@ footer {
 }
 
 footer img {
-    width: 48px;
-    height: 48px;
+    width: 70px;
+    height: 70px;
     filter: drop-shadow(3px 3px 2px hsla(0, 0%, 0%, 0.5));
 }
 

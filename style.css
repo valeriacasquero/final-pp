@@ -17,6 +17,12 @@
     font-size: normal;
 }
 
+@font-face {
+    font-family: 'delius_swash_caps';
+    src: url('./fonts/Delius_Swash_Caps/DeliusSwashCaps-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
 
 body {
     padding: 0;
@@ -31,7 +37,8 @@ body {
     width: 100vw;
     overflow: auto;
     background-color: black;
-    border-top: 3px solid var(--verde-claro);
+    border-top: 3px solid var(--verde-oscuro);
+    border-bottom: 3px solid var(--verde-oscuro);
 }
 
 .encabezado {
@@ -67,6 +74,7 @@ body {
     border: solid 3px var(--verde-oscuro);
     border-radius: 15px;
     cursor: default;
+    background: linear-gradient(135deg, #a4df82, var(--verde-claro));
 }
 
 .titulo-seccion, .subtitulo-seccion, .parrafo-seccion, .mapa {
@@ -75,9 +83,14 @@ body {
     text-align: center;
 }
 
+.subtitulo-seccion, .parrafo-seccion, .lista-seccion {
+    font-family: 'delius_swash_caps';
+}
+
 .titulo-seccion {
     text-decoration: underline var(--verde-oscuro);
     font-size: 2.5rem;
+    font-style: italic;
 }
 
 .subtitulo-seccion {
@@ -93,4 +106,9 @@ body {
 .mapa{
     width: 80%;
     margin: 15px auto;
+}
+
+iframe {
+    border: 3px solid var(--verde-oscuro);
+    border-radius: 15px;
 }
