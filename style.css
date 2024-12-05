@@ -1,7 +1,7 @@
 :root {
     --verde-claro: #6AB43E;
     --verde-oscuro: hsl(152, 87%, 17%);
-    --fondo-amarillo-claro: #faffbb;
+    --fondo-blanco-verde: #f1f9f9;
 }
 @font-face {
     font-family: 'sail';
@@ -29,34 +29,39 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'sail';
-    background-color: var(--fondo-amarillo-claro);
 }
 
 .banner {
+    position: relative;
     height: 405px;
     width: 100vw;
-    overflow: auto;
+    overflow: hidden;
     background-color: black;
-    border-top: 3px solid var(--verde-oscuro);
-    border-bottom: 3px solid var(--verde-oscuro);
+    border-top: 5px solid var(--verde-claro);
+    border-bottom: 5px solid var(--verde-claro);
 }
 
 .encabezado {
-    font-size: 70px;
-    color: white;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -50%);
+    text-align: center;
     pointer-events: none;
     z-index: 2;
+}
+
+.encabezado h1 {
+    font-size: 100px;
+    color: white;
+    margin: 0;
 }
 
 .imagen {
     object-position: 47% 65%;
     object-fit: cover;
     height: 405px;
-    width: 1296px;
+    width: 100vw;
     transition: ease-in-out 1s;
     z-index: 1;
 }
@@ -67,14 +72,14 @@ body {
 }
 
 .seccion {
-    color: var(--verde-oscuro);
-    width: 80%;
-    margin: 15px auto;
+    width: 70%;
+    margin: 50px auto;
     background-color: var(--verde-claro);
-    border: solid 3px var(--verde-oscuro);
+    border-left: 5px solid var(--verde-claro);
+    border-bottom: 5px solid var(--verde-claro);
     border-radius: 15px;
     cursor: default;
-    background: linear-gradient(135deg, #a4df82, var(--verde-claro));
+    background-color: var(--fondo-blanco-verde);
 }
 
 .titulo-seccion, .subtitulo-seccion, .parrafo-seccion, .mapa {
@@ -88,18 +93,17 @@ body {
 }
 
 .titulo-seccion {
-    text-decoration: underline var(--verde-oscuro);
-    font-size: 2.5rem;
+    text-decoration: underline;
+    font-size: 3.5rem;
     font-style: italic;
 }
 
 .subtitulo-seccion {
     margin: 0;
     text-align: center;
-    font-size: large;
 }
 
-.parrafo-seccion, .lista-seccion {
+.parrafo-seccion, .lista-seccion, .subtitulo-seccion {
     font-size: 1.5rem;
 }
 
@@ -109,6 +113,40 @@ body {
 }
 
 iframe {
-    border: 3px solid var(--verde-oscuro);
+    border-left: 5px solid var(--verde-claro);
+    border-bottom: 5px solid var(--verde-claro);
     border-radius: 15px;
+}
+
+@media (max-width: 600px) {
+    .banner, .imagen {
+        height: 200px;
+    }
+
+    .imagen:hover {
+        transform: scale(1.5, 1.5);
+    }
+
+    .encabezado {
+        text-align: center;
+    }
+    .encabezado h1 {
+        font-size: 50px;
+    }
+
+    .seccion {
+        width: 90%;
+    }
+
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+
+    .subtitulo-seccion, .parrafo-seccion, .lista-seccion {
+        font-size: 1.3rem;
+    }
+
+    iframe {
+        height: 240px;
+    }
 }

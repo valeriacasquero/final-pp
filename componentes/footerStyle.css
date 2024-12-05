@@ -1,11 +1,9 @@
 footer {
-    width: 98.5vw;
-    background-color: var(--fondo-amarillo-claro);
+    width: 100vw;
     bottom: 0;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
 }
 
 .grupo-iconos {
@@ -28,5 +26,12 @@ footer img {
 }
 
 footer img:hover {
-    opacity: 0.5;
+    filter: brightness(70%);
+}
+
+@media (max-width: 600px) {
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
 }
