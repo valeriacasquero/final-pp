@@ -1,0 +1,37 @@
+footer {
+    width: 100vw;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.grupo-iconos {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.icono {
+    list-style-type: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+footer img {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(3px 3px 2px hsla(0, 0%, 0%, 0.5));
+}
+
+footer img:hover {
+    filter: brightness(70%);
+}
+
+@media (max-width: 600px) {
+    footer img {
+        width: 50px;
+        height: 50px;
+    }
+}
