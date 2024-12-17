@@ -1,7 +1,8 @@
 :root {
-    --verde-claro: #6AB43E;
+    --verde-claro: #8db91e;
     --verde-oscuro: hsl(152, 87%, 17%);
-    --fondo-blanco-verde: #f1f9f9;
+    --blanco-verde: #afdbc3;
+    --amarillo: #ffcc00;
 }
 @font-face {
     font-family: 'sail';
@@ -29,6 +30,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'sail';
+    background: linear-gradient(77deg, #65b386, #00943e);
 }
 
 .banner {
@@ -75,11 +77,10 @@ body {
     width: 70%;
     margin: 50px auto;
     background-color: var(--verde-claro);
-    border-left: 5px solid var(--verde-claro);
-    border-bottom: 5px solid var(--verde-claro);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
     cursor: default;
-    background-color: var(--fondo-blanco-verde);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .titulo-seccion, .subtitulo-seccion, .parrafo-seccion, .mapa {
@@ -113,8 +114,7 @@ body {
 }
 
 iframe {
-    border-left: 5px solid var(--verde-claro);
-    border-bottom: 5px solid var(--verde-claro);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
 }
 
