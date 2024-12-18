@@ -17,6 +17,8 @@ body {
     padding: 20px;
 }
 
+
+
 .contact-container {
     background: #d1dea3;
     border-radius: 10px;
@@ -84,7 +86,7 @@ body {
 
 .contact-form button {
     padding: 10px;
-    background: #8bc34a;
+    background: #77be26;
     border: none;
     color: #fff;
     font-size: 16px;
@@ -94,15 +96,17 @@ body {
 }
 
 .contact-form button:hover {
-    background: #6fa72f;
+    background: #75b703;
 }
 
 .map-preview {
+    
     margin-top: 30px;
     text-align: center;
 }
 
 .map-preview img {
+    
     max-width: 100%;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -117,9 +121,9 @@ body {
         text-align: center;
     }
 }
-body{
-    background-color: #0e110e;
+body {
+    background-color: #111927;
     background-image: 
-        radial-gradient(at 47% 33%, hsl(87.86, 92%, 24%) 0, transparent 59%), 
-        radial-gradient(at 82% 65%, hsl(60.00, 56.00000000000001%, 10%) 0, transparent 55%);
+        radial-gradient(at 47% 33%, hsl(88.78, 90%, 48%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(218.00, 39%, 11%) 0, transparent 55%);
 }

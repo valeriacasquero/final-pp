@@ -21,6 +21,7 @@ body {
 }
 
 .container {
+    
     width: 100%;
     max-width: 400px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -33,7 +34,7 @@ body {
 .header {
     text-align: center;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #d1dea3;
 }
 
 .logo {
@@ -91,7 +92,7 @@ body {
     padding: 10px;
     border-radius: 8px;
     border: none;
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #d1dea3;
     color: #fff;
     font-size: 14px;
 }
@@ -137,7 +138,7 @@ body {
 .footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: #d1dea3;
     font-size: 12px;
     color: #ccc;
 }
