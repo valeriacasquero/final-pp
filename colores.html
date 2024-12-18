@@ -6,39 +6,17 @@
     <title>Colores</title>
     <link rel="icon" href="./img/pngwing.icon.png">
     <link rel="stylesheet" href="colores.css">
-   
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./componentes/headerStyle.css">
+    <link rel="stylesheet" href="./componentes/footerStyle.css">
 </head>
 <body>
     <body>
+        
         <header>
-            <nav class="botones">
-                <div class="titulo">
-                    <h2>Reciclemos</h2>
-                </div>
-                <ul class="botones-lista">
-                    <li class="lista-item"><a href="../index.html">Home</a></li>
-                    <li class="lista-item"><a href="#">Nosotros</a></li>
-                    <li class="lista-item"><a href="#">Colores</a></li>
-                    <li class="lista-item"><a href="../puntosreciclaje.html">Puntos de reciclado</a></li>
-                    <li class="lista-item"><a href="#">Contacto</a></li>
-                    <li class="lista-item"><a href="#">Login</a></li>
-                </ul>
-        
-            </nav>
-            
-            <div class="numero">
-    
-                <div class="dudas">
-                    <div class="imagen-tel">
-                        <img src="./img/header-btn-icon.png" alt="tel">
-                    </div>                
-                    <p class="dudas1">¿Tienes dudas?</p>
-                    <p class="dudas2">341-234-5678</p>
-                </div>
-                <button class="donacion">Dona ahora</button>
-            </div>
-        
+            <div id="header-container"></div>
         </header>
+
         <div class="container-tacho-amarillo">
             <div class="image-container-amarillo">
                 <img id="customImage" src="./img/contenedor-amarillo.jpg" alt="Imagen personalizable">
@@ -93,15 +71,12 @@
             </p>
         </div>
     </div>
+
+    </body>  
+       
     <footer>
-        <ul class="grupo-iconos">
-            <li class="icono"><a href="https://www.facebook.com/municipalidadrosario" target="_blank"><img src="./img/facebook.png" alt="facebook"></a></li>
-            <li class="icono"><a href="https://www.instagram.com/muni_rosario/" target="_blank"><img src="./img/instagram.png" alt="instagram"></a></li>
-            <li class="icono"><a href="https://x.com/MuniRosario" target="_blank"><img src="./img/x.png" alt="x"></button></li>
-            <li class="icono"><a href="https://api.whatsapp.com/send?phone=5493415440147&text=%C2%A1Hola!" target="_blank"><img src="./img/whatsapp.png" alt="whatsapp"></a></li>  
-        </ul>
+        <div id="footer-container"></div>
     </footer>
-        <script src="./componentes/loadHeader.js" defer></script>
-        <script src="./componentes/loadFooter.js" defer></script>
-    </body>
+    <script src="./componentes/loadHeader.js" defer></script>
+    <script src="./componentes/loadFooter.js" defer></script>
 </html>

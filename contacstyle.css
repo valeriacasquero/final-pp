@@ -41,6 +41,7 @@ body {
 .contact-info h2 {
     margin-bottom: 20px;
     font-size: 24px;
+    font-family: 'sail';
 }
 
 .contact-info p {
@@ -63,6 +64,8 @@ body {
 .contact-form h2 {
     margin-bottom: 20px;
     color: #555;
+    font-family: 'sail';
+    font-size: 2rem;
 }
 
 .contact-form form {
