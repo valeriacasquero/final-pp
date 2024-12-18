@@ -1,13 +1,6 @@
 /* Fuentes */
 @import url(style.css);
 
-@font-face {
-    font-family: 'popins';
-    src: url('./fonts/Poppins/Poppins-Black.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
 /* General */
 * {
     margin: 0;

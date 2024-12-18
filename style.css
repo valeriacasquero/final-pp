@@ -4,6 +4,14 @@
     --blanco-verde: #afdbc3;
     --amarillo: #ffcc00;
 }
+
+@font-face {
+    font-family: 'popins';
+    src: url('./fonts/Poppins/Poppins-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @font-face {
     font-family: 'sail';
     src: url('./fonts/Sail/Sail-Regular.ttf') format('truetype');
