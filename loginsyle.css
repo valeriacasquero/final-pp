@@ -73,6 +73,8 @@ body {
 .login-box h2 {
     margin-bottom: 20px;
     color: #ffffff;
+    font-family: 'sail';
+    font-size: 2rem;
 }
 
 .login-form {
