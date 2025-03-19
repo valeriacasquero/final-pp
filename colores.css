@@ -1,31 +1,170 @@
+
+
 .container-tacho-amarillo {
     display: flex;
-    width: 60%;
-    height: 45vh;
-    border: 1px solid #ccc;
+    width: 90%;
+    max-width: 1200px;
+    min-height: 300px;
+    height: auto;
     margin: 20px auto;
-    padding: 40px;
+    padding: 30px;
     border: none;
     overflow: hidden;
     color: white;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
 }
-/*.image-container-amarillo {
-    width: 40%;
-    height: 100%;
-}*/
+
+
+.image-container-amarillo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
 .image-container-amarillo img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    max-height: 350px;
     object-fit: cover;
+    border-radius: 4px; 
 }
+
+
 .text-container-amarillo {
     width: 60%;
     padding: 10px;
-    display: block;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
 }
 
 .text-container-amarillo p {
-    font-family: 'poppins';
+    font-family: 'poppins', sans-serif;
+    font-size: 1.75rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+
+@media (min-width: 1400px) {
+    .container-tacho-amarillo {
+        width: 70%;
+        padding: 40px;
+    }
+    
+    .image-container-amarillo img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+    
+    .text-container-amarillo p {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .container-tacho-amarillo {
+        width: 95%;
+        padding: 25px;
+    }
+    
+    .image-container-amarillo img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+    
+    .text-container-amarillo p {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container-tacho-amarillo {
+        padding: 20px;
+    }
+    
+    .image-container-amarillo img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+    
+    .text-container-amarillo {
+        width: 65%;
+    }
+    
+    .text-container-amarillo p {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .container-tacho-amarillo {
+        flex-direction: column;
+        min-height: auto;
+        height: auto;
+        padding: 15px;
+    }
+    
+    .image-container-amarillo {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+    .image-container-amarillo img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    
+    .text-container-amarillo {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .text-container-amarillo p {
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .container-tacho-amarillo {
+        padding: 10px;
+    }
+    
+    .image-container-amarillo img {
+        max-width: 150px;
+        max-height: 150px;
+    }
+    
+    .text-container-amarillo p {
+        font-size: 1rem;
+    }
+}
+
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .container-tacho-amarillo {
+        flex-direction: row;
+        padding: 10px 15px;
+        min-height: auto;
+    }
+    
+    .image-container-amarillo img {
+        max-width: 120px;
+        max-height: 120px;
+    }
+    
+    .text-container-amarillo p {
+        font-size: 1rem;
+    }
 }

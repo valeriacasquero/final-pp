@@ -73,6 +73,7 @@
     font-size: medium;
     font-family: "bungee", serif;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .donacion:hover {

@@ -1,7 +1,7 @@
-/* Fuentes */
+
 @import url(style.css);
 
-/* General */
+
 * {
     margin: 0;
     padding: 0;
@@ -29,7 +29,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* Header */
+
 .header {
     text-align: center;
     padding: 20px;
@@ -54,13 +54,15 @@ body {
     color: var(--blanco-verde);
 }
 
-/* Main */
+
 .main {
-    padding: 20px;
+    padding: 50px;
 }
 
 .login-box {
     text-align: center;
+    width: 100%;
+
 }
 
 .login-box h2 {
@@ -93,8 +95,9 @@ body {
     border-radius: 8px;
     border: none;
     background-color: #d1dea3;
-    color: #fff;
-    font-size: 14px;
+    color: #003605;
+    font-size: 14px bold;
+    font-weight: bold;
 }
 
 .input-group input:focus {
@@ -118,7 +121,7 @@ body {
     background-color: var(--amarillo);
 }
 
-/* Links adicionales */
+
 .extra-links {
     margin-top: 20px;
     font-size: 14px;
@@ -134,7 +137,7 @@ body {
     text-decoration: underline;
 }
 
-/* Footer */
+
 .footer {
     text-align: center;
     padding: 10px;
